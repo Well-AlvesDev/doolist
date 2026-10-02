@@ -1,0 +1,46 @@
+<!-- Olá, este que vós fala é Weslley Kholson! Este é um simples projeto com intuito de praticar o feijão com arroz (html, css e js)
+ então não se assuste quanto a simplicidade do código e estrutura de pastas, pois esta é a proposta -->
+
+ <!DOCTYPE html>
+ <html lang="pt-br">
+    <!-- em <html lang="IDIOMA"> conseguimos definir o idioma padrão da página -->
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DooList - Tarefas organizadas</title>
+      <!-- em <title> conseguimos definir o título da página, o qual aparece na aba do navegador -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <!-- em <link rel="icon" type="image/x-icon" href="/favicon.ico"> conseguimos definir o ícone da página, o qual também aparece na aba do navegador -->
+    <link rel="stylesheet" href="recursos/css/style.css">
+    <script src="recursos/js/menu.js" defer></script>
+ </head>
+ <body>
+    <header class="site-header">
+        <nav class="navbar" aria-label="Navegação principal">
+            <a class="navbar__brand" href="index.html" aria-label="DooList - página inicial">
+                <!-- Substitua este ícone provisório pela imagem da logo quando o link estiver disponível. -->
+           <img class="navbar__logo" src="recursos/imagens/image.png" alt="Logo do DooList" style="max-width: 120px;">
+            
+            </a>
+
+            <button class="navbar__overlay" type="button" aria-label="Fechar menu"></button>
+
+            <button
+                class="navbar__toggle"
+                type="button"
+                aria-label="Abrir menu"
+                aria-expanded="false"
+                aria-controls="menu-principal">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="navbar__menu" id="menu-principal">
+                <li><a class="navbar__link" href="#inicio">Início</a></li>
+                <li><a class="navbar__link" href="#tarefas">Minhas tarefas</a></li>
+            </ul>
+        </nav>
+    </header>
+ </body>
+ </html>
